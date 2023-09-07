@@ -68,14 +68,70 @@
   .botNav{
     display: flex;
     justify-content: flex-start;
-    padding: 20px 0px 20px 100px;
+    padding: 20px 0px 20px 10px;
     gap: 25px ;
-    background-color: rgba(207, 199, 199, 0.627);
+    background-color: rgba(255, 255, 255, 0.627);
   }
   .botNav a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     box-sizing: border-box;
     border: 1px solid black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.304);
     padding: 10px 10px 10px 10px;
     border-radius: 20px;
+    scale: 0.85;
   }
-  
+  .botNav a:hover{
+    scale: 1;
+  }
+  .botNav a img{
+    width: 95px;
+    height: 75px;
+  }
+  .date{
+    display: flex;
+  }
+  .fastSelect{
+    display: block;
+  }
+  .hero{
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(/assets/img/backgrounds/roadHero.jpg);
+    /* background-color: yellow; */
+    background-size:100%;
+    background-origin: border-box;
+    padding: 20px 20px 20px 20px ;
+  }
+  .leftHero{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+  .advantages{
+    text-align: center;
+  }
+  .advantages h3{
+    color: white;
+  }
+.advantagesGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  row-gap: 15px ;
+  color: white;
+}
+.adv{
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 125px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.357);
+}
+.adv img{
+  padding: 20px;
+}
