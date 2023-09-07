@@ -9,6 +9,8 @@
   */
   * {
     margin: 0;
+    font-family: 'Inter', sans-serif;
+
   }
   /*
     Typographic tweaks!
@@ -52,12 +54,20 @@
   .topNav{
     display: flex;
     justify-content: space-between;
-    padding: 20px 100px 20px 100px;
-    background-color: rgb(205, 24, 24);
+    padding: 35px 100px 35px 100px;
+    background-color: rgb(33, 151, 225);
+  }
+  .leftNav{
+    padding-inline:50px ;
+    font-size: large;
+  }
+  .leftNav b{
+    font-size: larger;
   }
   .rightNav{
     display: flex;
     gap: 20px;
+
   }
  .mid{
     padding-inline: 20px    ;
@@ -67,8 +77,8 @@
 
   .botNav{
     display: flex;
-    justify-content: flex-start;
-    padding: 20px 0px 20px 10px;
+    justify-content: center;
+    padding: 10px 0px 10px 10px;
     gap: 25px ;
     background-color: rgba(255, 255, 255, 0.627);
   }
@@ -78,39 +88,80 @@
     text-align: center;
     justify-content: center;
     box-sizing: border-box;
-    border: 1px solid black;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.304);
-    padding: 10px 10px 10px 10px;
+    border: none;
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.304);
+    padding: 5px 5px 5px 5px;
     border-radius: 20px;
     scale: 0.85;
   }
   .botNav a:hover{
     scale: 1;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.304);
   }
   .botNav a img{
-    width: 95px;
-    height: 75px;
+    width: 85px;
+    height: 65px;
+    padding: 10px;
   }
   .date{
     display: flex;
-  }
+    justify-content: center;
+    margin-bottom: 15px;
+    }
+    .date input{
+      padding-inline: 35px;
+      border: none;
+      border-radius: 12px;
+    }
+    .searchTicket{
+      text-align: center;
+      
+    }
+    .searchTicket button{
+      padding: 20px 50px 20px 50px ;
+      scale: 0.95;
+      background-color: rgb(33, 151, 225);
+      border: none;
+      border-radius: 15px;
+    }
+    .searchTicket button:hover{
+      scale: 1;
+      background-color: rgb(59, 218, 34);
+    }
   .fastSelect{
+    text-align: center;
     display: block;
+  }
+  .fastSelect button{
+    width: 80px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 12px;
+    scale: 0.85;
+  }
+  .fastSelect button:hover{
+    scale: 1;
+    background-color: gray;
   }
   .hero{
     display: flex;
     justify-content: space-evenly;
-    background-image: url(/assets/img/backgrounds/roadHero.jpg);
+    background-image: url(/assets/img/backgrounds/roadHero2.jpg);
     /* background-color: yellow; */
     background-size:100%;
     background-origin: border-box;
-    padding: 20px 20px 20px 20px ;
+    padding: 20px 20px 45px 20px ;
   }
   .leftHero{
+    padding: 75px 75px 75px 75px;
     display: inline-block;
     box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.545);
     border: 1px solid black;
+    border-radius: 15px;
+    
   }
+
   .advantages{
     text-align: center;
   }
@@ -126,7 +177,7 @@
 }
 .adv{
   box-sizing: border-box;
-  border: 1px solid black;
+  border: none;
   border-radius: 15px;
   width: 125px;
   text-align: center;
@@ -134,4 +185,65 @@
 }
 .adv img{
   padding: 20px;
+}
+.ticketForm{
+  margin-bottom: 15px;
+}
+
+.ticketForm input{
+  border: none;
+  padding: 10px 20px 10px 20px ;
+  border-radius: 8px 0px 0px 8px;
+}
+.inputSearch{
+  display: flex;
+}
+.inputSearch button{
+  border: none;
+  background-color: white;
+  border-radius:0px 8px 8px 0px;
+  
+}
+.inputSearch button img:hover{
+  scale: 1.2;
+}
+.brand{
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.544);
+}
+.brand a{
+  color: rgb(33, 151, 225);
+  
+}
+.footerAdv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: medium;
+}
+.footerAdv img{
+  width: 20px;
+}
+.footerBot{
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 25px; ;
+}
+.footerBot li{
+  list-style: none;
+}
+.footerBot li a{
+  color: grey;
+  font-size: smaller;
+}
+
+.social{
+  display: flex;
+  gap: 15px ;
+}
+.social img{
+  width: 20px;
 }
