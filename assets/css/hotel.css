@@ -1,0 +1,273 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  .topNav{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 100px 35px 100px;
+    background-color: rgb(33, 151, 225);
+  }
+  .leftNav{
+    padding-inline:50px ;
+    font-size: large;
+  }
+  .leftNav b{
+    font-size: larger;
+  }
+  .rightNav{
+    display: flex;
+    gap: 20px;
+
+  }
+ .mid{
+    padding-inline: 20px    ;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+ }
+
+  .botNav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 10px;
+    gap: 25px ;
+    background-color: rgba(255, 255, 255, 0.627);
+  }
+  .botNav a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.304);
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px;
+    scale: 0.85;
+  }
+  .botNav a:hover{
+    scale: 1;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.304);
+  }
+  .botNav a img{
+    width: 85px;
+    height: 65px;
+    padding: 10px;
+  }
+  .date{
+    display: block;
+    margin-bottom: 15px;
+    }
+    .date input{
+      padding: 10px 66px 10px 66px;
+      border: none;
+      border-radius: 7px;
+    }
+    .searchTicket{
+      text-align: center;
+      
+    }
+    .searchTicket button{
+      padding: 20px 50px 20px 50px ;
+      scale: 0.95;
+      background-color: rgb(33, 151, 225);
+      border: none;
+      border-radius: 15px;
+    }
+    .searchTicket button:hover{
+      scale: 1;
+      background-color: rgb(59, 218, 34);
+    }
+
+  .fastSelect button{
+    width: 80px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 12px;
+    scale: 0.85;
+  }
+  .fastSelect button:hover{
+    scale: 1;
+    background-color: gray;
+  }
+  .hero{
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(/assets/img/backgrounds/hotelHero.jpg);
+    background-repeat: no-repeat;
+    /* background-color: yellow; */
+    background-size:100%;
+    background-origin: border-box;
+    padding: 20px 20px 45px 20px ;
+  }
+  .leftHero{
+    padding: 75px 75px 75px 75px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: rgba(60, 48, 48, 0.527);
+    border: none;
+    border-radius: 15px;
+    color: white;
+  }
+
+  .advantages{
+    text-align: center;
+  }
+  .advantages h3{
+    color: white;
+  }
+.advantagesGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 15px;
+  row-gap: 15px ;
+  color: white;
+  padding-top: 90px;
+}
+.adv{
+  box-sizing: border-box;
+  border: none;
+  border-radius: 15px;
+  width: 125px;
+  text-align: center;
+  background-color: rgba(60, 48, 48, 0.527);
+}
+.adv img{
+  padding: 20px;
+}
+.ticketForm{
+  
+    display: flex;
+    margin-bottom: 15px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ticketForm input{
+  border: none;
+  width: 300px;
+  padding: 10px 20px 10px 20px ;
+  border-radius: 8px 0px 0px 8px;
+}
+.inputSearch{
+  display: flex;
+}
+.inputSearch button{
+  border: none;
+  background-color: white;
+  border-radius:0px 8px 8px 0px;
+  
+}
+.inputSearch button img:hover{
+  scale: 1.2;
+}
+.brand{
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.544);
+}
+.brand a{
+  color: rgb(33, 151, 225);
+  
+}
+.footerAdv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: medium;
+}
+.footerAdv img{
+  width: 20px;
+}
+.footerBot{
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 25px; ;
+}
+.footerBot li{
+  list-style: none;
+}
+.footerBot li a{
+  color: grey;
+  font-size: smaller;
+}
+
+.social{
+  display: flex;
+  gap: 15px ;
+}
+.social img{
+  width: 20px;
+}
+#hotel{
+    background-color:rgba(71, 156, 21, 0.668) ;
+    scale: 1;
+}
+.setFlight{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.passenger{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.leftPass input{
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+}

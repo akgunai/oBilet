@@ -146,7 +146,8 @@
   .hero{
     display: flex;
     justify-content: space-evenly;
-    background-image: url(/assets/img/backgrounds/roadHero2.jpg);
+    background-image: url(/assets/img/backgrounds/roadHero3.jpg);
+    background-repeat: no-repeat;
     /* background-color: yellow; */
     background-size:100%;
     background-origin: border-box;
@@ -156,10 +157,10 @@
     padding: 75px 75px 75px 75px;
     display: inline-block;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.545);
+    background-color: rgba(60, 48, 48, 0.527);
     border: none;
     border-radius: 15px;
-    
+    color: white;
   }
 
   .advantages{
@@ -181,7 +182,7 @@
   border-radius: 15px;
   width: 125px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.357);
+  background-color: rgba(60, 48, 48, 0.527);
 }
 .adv img{
   padding: 20px;
