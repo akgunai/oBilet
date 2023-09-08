@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al-iBilet</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Al-iPlane</title>
+    <link rel="stylesheet" href="assets/css/plane.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet"> 
@@ -23,8 +23,8 @@
             </div>
             <!-- top nav bitis -->
             <div class="botNav">
-                <a id="bus" href="Al-iBilet.html"><img src="assets/img/icons/bus.png" alt=""></a>
-                <a href="Al-iPlane.html"><img src="assets/img/icons/plane.png" alt=""></a>
+                <a href="Al-iBilet.html"><img src="assets/img/icons/bus.png" alt=""></a>
+                <a id="plane" href="Al-iPlane.html"><img src="assets/img/icons/plane.png" alt=""></a>
                 <a href="#"><img src="assets/img/icons/hotel.png" alt=""></a>
             </div>
         </div>
@@ -34,25 +34,45 @@
             <div class="leftHero">
                 <form action="">
                     <div class="ticketForm">
-                        <label  for="">Kalkış İl'i Seçiniz</label><br>
-                        <div class="inputSearch">
-                            <input type="search" placeholder="İstanbul ">
-                            <button><img src="assets/img/icons/downArrow.png" alt=""></button>
+                        <div class="planeTicket">
+                            <label  for="">Nereden</label>
+                            <div class="inputSearch">
+                                <input type="search" placeholder="İstanbul ">
+                                <button><img src="assets/img/icons/downArrow.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="planeTicket">
+                            <label for="">Nereye</label>
+                            <div class="inputSearch">
+                                <input type="search" placeholder="Ankara">
+                                <button><img src="assets/img/icons/downArrow.png" alt=""></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="ticketForm">
-                        <label for="">Varış İl'i Seçiniz</label><br>
-                        <div class="inputSearch">
-                            <input type="search" placeholder="Ankara">
-                            <button><img src="assets/img/icons/downArrow.png" alt=""></button>
+                    <div class="setFlight">
+                        <div class="date">
+                            <label for="">Gidiş Tarihi</label>
+                            <div class="inputDate">
+                                <input type="date" >
+                            </div>
                         </div>
-                        
+                        <div class="date">
+                            <label for="">Dönüş Tarihi</label>
+                            <div class="inputDate">
+                                <input type="date" >
+                            </div>
+                        </div>
                     </div>
-                    <div class="date">
-                        <input type="date" >
-                        <div class="fastSelect">
-                            <button>Bugün</button><br>
-                            <button>Yarın</button>
+                    <div class="passenger">
+                        <div class="leftPass">
+                            <label for="">Yolcu</label>
+                            <div class="inputPassenger">
+                                <input type="number" placeholder="Yolcu Sayısı" min="1" >
+                            </div>
+                        </div>
+                        <div class="rightPass">
+                            <input type="checkbox">  Tek Yön <br>
+                            <input type="checkbox">  Gidiş Dönüş<br>                            
                         </div>
                     </div>
                     <div class="searchTicket">
@@ -66,10 +86,8 @@
                     <div class="advantagesGrid">
                         <div class="adv"><img src="assets/img/icons/costumerServices.png" alt="">7/24 Müşteri Hizmetleri</div>
                         <div class="adv"><img src="assets/img/icons/creditCard.png" alt="">Güvenli Ödeme</div>
-                        <div class="adv"><img src="assets/img/icons/taxFree.png" alt="">Komisyon Yok, Ücretsiz</div>
                         <div class="adv"><img src="assets/img/icons/visitors.png" alt="">Ayda 3-5 Adet Müşteri</div>
                         <div class="adv"><img src="assets/img/icons/clock.png" alt="">2 Dakikada Bilet Al!</div>
-                        <div class="adv"><img src="assets/img/icons/refund.png" alt="">Ücretsiz İade Hakkı</div>
                     </div>
                 </div>
             </div>

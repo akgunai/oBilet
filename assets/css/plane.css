@@ -104,14 +104,13 @@
     padding: 10px;
   }
   .date{
-    display: flex;
-    justify-content: center;
+    display: block;
     margin-bottom: 15px;
     }
     .date input{
-      padding-inline: 35px;
+      padding: 10px 66px 10px 66px;
       border: none;
-      border-radius: 12px;
+      border-radius: 7px;
     }
     .searchTicket{
       text-align: center;
@@ -128,10 +127,7 @@
       scale: 1;
       background-color: rgb(59, 218, 34);
     }
-  .fastSelect{
-    text-align: center;
-    display: block;
-  }
+
   .fastSelect button{
     width: 80px;
     background-color: white;
@@ -146,7 +142,7 @@
   .hero{
     display: flex;
     justify-content: space-evenly;
-    background-image: url(/assets/img/backgrounds/roadHero2.jpg);
+    background-image: url(/assets/img/backgrounds/planeHero.jpg);
     /* background-color: yellow; */
     background-size:100%;
     background-origin: border-box;
@@ -156,10 +152,10 @@
     padding: 75px 75px 75px 75px;
     display: inline-block;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.545);
+    background-color: rgba(60, 48, 48, 0.527);
     border: none;
     border-radius: 15px;
-    
+    color: white;
   }
 
   .advantages{
@@ -170,7 +166,7 @@
   }
 .advantagesGrid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
   gap: 15px;
   row-gap: 15px ;
   color: white;
@@ -181,13 +177,19 @@
   border-radius: 15px;
   width: 125px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.357);
+  background-color: rgba(60, 48, 48, 0.527);
 }
 .adv img{
   padding: 20px;
 }
 .ticketForm{
-  margin-bottom: 15px;
+  
+    display: flex;
+    margin-bottom: 15px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .ticketForm input{
@@ -247,7 +249,17 @@
 .social img{
   width: 20px;
 }
-#bus{
-  background-color:rgba(71, 156, 21, 0.668) ;
-  scale: 1;
+#plane{
+    background-color:rgba(71, 156, 21, 0.668) ;
+    scale: 1;
+}
+.setFlight{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.passenger{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
 }
