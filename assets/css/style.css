@@ -252,3 +252,6 @@
   background-color:rgba(71, 156, 21, 0.668) ;
   scale: 1;
 }
+.cities{
+  display: block;
+}

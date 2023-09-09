@@ -1,0 +1,45 @@
+https://jechdmwurjqoeknzsjbd.supabase.co/rest/v1/sefer?firma_id=eq.3&select=date
+	
+main url-----
+
+https://jechdmwurjqoeknzsjbd.supabase.co/rest/v1/
+
+tablo adları -----
+
+sefer
+firma
+
+seferleri çek-----
+main url+tablo adı
+
+tablo içeriğine ulaşma-----
+
+main url+"?"+"içerik key'i"+"=eq."+"key'in iç değeri"
+
+örneğin:
+
+https://jechdmwurjqoeknzsjbd.supabase.co/rest/v1/sefer?firma_id=eq.3
+
+anlamı= database'in sefer isimli tablosuna git, içerisindeki firma_id keyinin
+değeri üçe eşit(equal) olanı getir.
+
+------------------
+
+tablo içeriğinde çoklu selectorle veri çekme-----
+
+main url+"?"+"içerik key'i"+"=eq."+"key'in iç değeri"+"&selecet="+"key"
+
+örneğin:
+
+https://jechdmwurjqoeknzsjbd.supabase.co/rest/v1/sefer?firma_id=eq.3&select=date
+
+anlamı=  database'in sefer isimli tablosuna git, içerisindeki "firma_id" keyinin
+değeri üçe eşit(equal) olan datanın tarihini(date key'i) getir.
+
+
+şeklindedir. 
+
+
+
+
+
